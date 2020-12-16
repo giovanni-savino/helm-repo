@@ -1,0 +1,93 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: index-cm
+data:
+  index.html: >-
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>Welcome to nginx!</title>
+
+    <style>
+        body {
+            width: 45em;
+            margin: 0 auto;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            padding: 50px;
+        }
+        #logo {    
+        background-image: url('https://www.objectway.com/wp-content/uploads/2020/10/LogoOwSite_static-h75.png');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+        }
+        .button {
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 10px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+
+    .button1 {
+      background-color: white; 
+      color: black; 
+      border: 2px solid #4CAF50;
+    }
+
+
+    .button1:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    </style>
+
+    </head>
+
+    <body>
+
+        <a id="logo" href="https://www.objectway.com/?lang=en" data-supplied-ml-starting-dark="false" data-supplied-ml-starting="false" data-supplied-ml="false">
+            <img style="padding-left:40px" alt="Objectway" src="https://www.objectway.com/wp-content/uploads/2020/10/LogoOwSite_animated-h24.gif" srcset="https://www.objectway.com/wp-content/uploads/2020/10/LogoOwSite_animated-h24.gif 1x, https://www.objectway.com/wp-content/uploads/2020/10/LogoOwSite_animated-h48.gif 2x"> 
+        </a>
+        <hr>
+
+
+    <br>
+
+    <h1>Esempio di nginx web-service</h1>
+
+    <img align="right" style="float: right;margin: 0 0 0 15px;height:200px"
+    alt="Objectway"
+    src="https://www.objectway.com/wp-content/uploads/2020/09/Objectway-Transformation-3.jpg">
+
+
+    <h3>
+
+    Inizia oggi la tua <br>trasformazione digitale
+
+    </h3>
+
+    Esplora la nostra soluzione e i nostri servizi per il Wealth & Asset
+    Management
+
+    <br>
+
+    <br>
+
+
+    <button class="button button1">Apri secondo servizio ></button>
+
+    <br/>
+
+    </body>
