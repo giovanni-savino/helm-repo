@@ -9,7 +9,7 @@ entries:
     name: nginx
     type: application
     urls:
-    - https://6f47319ca98a8f87739eca98727dcaaf683fc76e@raw.github.ibm.com/giovanni-savino/helm-repo/master/nginx-0.1.0.tgz
+    - https://raw.github.ibm.com/giovanni-savino/helm-repo/master/nginx-0.1.0.tgz
     version: 0.1.0
   nginx2:
   - apiVersion: v1
@@ -19,6 +19,6 @@ entries:
     digest: a18cfc807f66e0ee2099a6418d656a53ddaf18eee40b97f1532ffcecb7a37075
     name: nginx2
     urls:
-    - https://6f47319ca98a8f87739eca98727dcaaf683fc76e@raw.github.ibm.com/giovanni-savino/helm-repo/master/nginx2-0.1.0.tgz
+    - https://raw.github.ibm.com/giovanni-savino/helm-repo/master/nginx2-0.1.0.tgz
     version: 0.1.0
 generated: "2020-12-16T23:50:12.276982+01:00"
