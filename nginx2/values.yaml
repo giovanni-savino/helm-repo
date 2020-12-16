@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: nginxinc/nginx-unprivileged
-  tag: stable
+  repository: openshift/hello-openshift
+  tag: latest
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
