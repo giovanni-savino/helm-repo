@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       annotations:
-        name: {{ include "common.fullname" . }}
+        name: {{ include "nginx.fullname" . }}
         checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
         {{- toYaml . | nindent 8 }}
       labels:
