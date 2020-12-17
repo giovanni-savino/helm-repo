@@ -15,6 +15,7 @@ spec:
     metadata:
     {{- with .Values.podAnnotations }}
       annotations:
+        name: {{ include "common.fullname" . }}
         checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
         {{- toYaml . | nindent 8 }}
     {{- end }}
