@@ -40,6 +40,11 @@ service:
   type: ClusterIP
   port: 8080
 
+route:
+  enabled: false
+  hosts:
+    - host: nginx.ocp45-51bac0da165d9fdd22b9f13584776699-0000.eu-de.containers.appdomain.cloud
+
 ingress:
   enabled: false
   annotations: {}

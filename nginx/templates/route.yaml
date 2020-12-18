@@ -1,14 +1,20 @@
+{{- if .Values.route.enabled -}}
+{{- $fullName := include "nginx.fullname" . -}}
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: nginx
+  name: {{ $fullName }}
 spec:
-  host: >-
-    nginx-hm.ocp45-51bac0da165d9fdd22b9f13584776699-0000.eu-de.containers.appdomain.cloud
+  {{- if .Values.route.hosts }}
+  {{- range $host := .Values.route.hosts }}
+  host: 
+   {{- end }} 
   to:
     kind: Service
-    name: nginx
+    name: {{ $fullName }}
     weight: 100
   port:
     targetPort: http
   wildcardPolicy: None
+  {{- end }}
+{{- end }}
