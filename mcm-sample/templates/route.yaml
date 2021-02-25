@@ -1,0 +1,20 @@
+{{- if .Values.route.enabled -}}
+{{- $fullName := include "mcm-sample.fullname" . -}}
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: {{ $fullName }}
+spec:
+  {{- if .Values.route.hosts }}
+  {{- range $host := .Values.route.hosts }}
+  host: 
+   {{- end }} 
+  to:
+    kind: Service
+    name: {{ $fullName }}
+    weight: 100
+  port:
+    targetPort: http
+  wildcardPolicy: None
+  {{- end }}
+{{- end }}

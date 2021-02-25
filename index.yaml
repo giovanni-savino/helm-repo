@@ -11,23 +11,15 @@ entries:
     urls:
     - https://raw.githubusercontent.com/giovanni-savino/helm-repo/master/nginx-0.2.4.tgz
     version: 0.2.4
+    mcm-sample:
   - apiVersion: v1
-    appVersion: 1.16.0
-    created: "2020-12-18T17:35:59.564595+01:00"
+    appVersion: 1.0.0
+    created: "2020-12-22T17:35:59.565673+01:00"
     description: A Helm chart for Kubernetes
-    digest: 1f3b29f0f3648e9e5479e9df6c50a1cb86b16d02a8d1f4217ebb65c064f25607
-    name: nginx
+    digest: 4571d8b79782031d4b53149fb94a1c74bbca9eda71eff862874d974bf645376d
+    name: mcm-sample
     type: application
     urls:
-    - https://raw.githubusercontent.com/giovanni-savino/helm-repo/master/nginx-0.2.3.tgz
-    version: 0.2.3
-  - apiVersion: v1
-    appVersion: 1.16.0
-    created: "2020-12-18T17:35:59.563513+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 43d4d48aa777b7573868bd496ee0c8ba6921c4791a83153acd15b40309933763
-    name: nginx
-    urls:
-    - https://raw.githubusercontent.com/giovanni-savino/helm-repo/master/nginx-0.1.0.tgz
-    version: 0.1.0
+    - https://raw.githubusercontent.com/giovanni-savino/helm-repo/master/mcm-sample-1.0.0.tgz
+    version: 1.0.0
 generated: "2020-12-18T17:35:59.561842+01:00"
